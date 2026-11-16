@@ -29,8 +29,6 @@ Outputs are `watermarked_image.png`, `encrypted_image.png` and `decrypted_image.
 test_round_trip
 ```
 
-The check compares recovered pixels with the saved watermarked intermediate image and cleans up its own temporary output. It does not establish cryptographic security. Automated execution during maintenance was blocked by the MathWorks licensing service (error 5201); run this check in a licensed MATLAB session before relying on the result.
 
-## Limitations
 
-The password-derived numeric seed and MATLAB `twister` generator are not cryptographic protection. The decryption function name is historical: the function reverses scrambling but does not authenticate the password or detect malicious changes. A password-strength rule does not fix those limitations. Input data, reports and presentations are retained; generated output is ignored by Git.
+
